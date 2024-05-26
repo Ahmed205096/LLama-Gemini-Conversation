@@ -19,7 +19,7 @@ if "conversation_history" not in st.session_state:
 
 
 # API LLAMA-3 from Meta
-LLAMA_API_KEY = "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"
+LLAMA_API_KEY = "API_KEY"
 def call_llama_api(prompt, api_key):
     LLAMA_BASE_URL = "https://api-inference.huggingface.co/models/meta-llama/Meta-Llama-3-8B-Instruct"
     headers = {"Authorization": f"Bearer {api_key}"}
@@ -34,7 +34,7 @@ def call_llama_api(prompt, api_key):
 
 
 # API Gemini from Google
-GEMINI_API_KEY = "AIzaSyBA3CkTbdwTA2ZRzoSDu1vVYfJDRtt8EjA"
+GEMINI_API_KEY = "API_KEY"
 def call_gemini_api(prompt, api_key):
     genai.configure(api_key=api_key)
     # Set up the model
